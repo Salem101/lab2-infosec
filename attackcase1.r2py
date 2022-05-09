@@ -17,4 +17,4 @@ myfile = ABopenfile("testfile.txt", True)
  myfile.close()
 #except: 
  #log("Data not written to file. Test Failed")
- #myfile.close()
+ m#yfile.close()

@@ -12,7 +12,7 @@ myfile.close()
 
 myfile = ABopenfile("testfile.txt", True)
 
-try: 
+#try: 
  assert('Stest12345E' == myfile.readat(None, 0)
  myfile.close()
 #except: 

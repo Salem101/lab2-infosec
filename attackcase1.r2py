@@ -9,13 +9,7 @@ if "test.txt.a" in listfiles():
 if "test.txt.b" in listfiles():
   removefile("test.txt.b")
   
-myfile = ABopenfile("test.txt", True)
-#lenB = len("test.txt.b")
-
-
-myfile.writeat("SabcdefE", 0)
-
-  ('SE' == myfile.readat(None, 0))
-  myfile.close()
-  
-
+myfile = ABopenfile("test", True)
+myfile.writeat("StestE", -1)
+myfile.writeat("StestE", 15)
+myfile.close()

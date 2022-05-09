@@ -4,5 +4,9 @@ if "test.txt.b" in listfiles():
   removefile("test.txt.b")
   
 myfile = ABopenfile("test", True)
-myfile.writeat("  ", 0)
+myfile.writeat("Sausages Eggplant eggs milk Sausages Eggplant eggs milk Sausages Eggplant eggs milk Sausages Eggplant eggs milk Sausages Eggplant eggs milk Sausages Eggplant eggs milk Sausages Eggplant eggs milk Sausages Eggplant eggs milk Sausages Eggplant eggs milk Sausages Eggplant eggs milk  E", 0)
+
+myfile.close()
+myfile=ABopenfile("test", True)
+
 myfile.close()

@@ -5,13 +5,14 @@ if "testfile.txt.a" in listfiles():
 if "testfile.txt.b" in listfiles(): 
   removefile("testfile.txt.b") 
   
-myfile = ABopenfile("testfile.txt", True)
-myfile.writeat("S" + "A" *9, 0)
-myfile.writeat("SE", 0)
-myfile.close()
+try: 
+  myfile = ABopenfile("testfile.txt", True)
+  myfile.writeat("S" + "A" *9, 0)
+  myfile.writeat("SE", 0)
+  myfile.close()
 
-myfile= ABopenfile("testfile.txt", True)
-data = myfile.readat(None, 0)
-if len(data) > 0: 
-  file.close()
-  
+  myfile= ABopenfile("testfile.txt", True)
+  data = myfile.readat(None, 0)
+  if len(data) > 0: 
+    file.close()
+

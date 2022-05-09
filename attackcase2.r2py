@@ -8,9 +8,7 @@ myfile.close()
 
 
 
-
-myfile = ABopenfile("testfile.txt/0", True)
-
-myfile.writeat("Stest1323523523464564564564565652345E")
-myfile.readat(None, 0)
-myfile.close()
+if "testfile.txt.a" in listfiles():
+ removefile("testfile.txt.a")
+if "testfile.txt.b" in listfiles(): 
+ removefile("testfile.txt.b")

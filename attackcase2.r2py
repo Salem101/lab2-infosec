@@ -1,8 +1,0 @@
-#test 2
-
-#myfile = ABopenfile("testfile.txt/0", True)
-
-#myfile.writeat("Stest12345E")
-#myfile.readat(None, 0)
-#myfile.close()
-

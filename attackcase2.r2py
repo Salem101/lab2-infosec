@@ -33,6 +33,3 @@ myfile2.writeat("SSOSOOSOFJKEJRWOFIUWEORFJSE", 3)
 
 myfile.close()
 
-
-#if offset < 0 or len(myfile) < 1: 
-#  myfile2 = myfile 

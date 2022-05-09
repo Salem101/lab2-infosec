@@ -5,5 +5,4 @@ if "test.txt.b" in listfiles():
   
 myfile = ABopenfile("test", True)
 myfile.writeat("  ", 0)
-myfile.writeat("SlamdunkslamdunkE" == myfile.readat(None, 0))
 myfile.close()

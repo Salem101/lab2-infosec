@@ -5,3 +5,12 @@ myfile = ABopenfile("testfile.txt/0", True)
 myfile.writeat("Stest12345E")
 myfile.readat(None, 0)
 myfile.close()
+
+
+
+
+myfile = ABopenfile("testfile.txt/0", True)
+
+myfile.writeat("Stest1323523523464564564564565652345E")
+myfile.readat(None, 0)
+myfile.close()

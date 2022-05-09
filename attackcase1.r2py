@@ -7,7 +7,7 @@ if "testfile.txt.b" in listfiles():
  
 #create file & enter data 
 myfile = ABopenfile("testfile.txt", True)
-myfile.writeat("Stest12345E", 0)
+#myfile.writeat("Stest12345E", 0)
 #myfile.close()
 
-#myfile = ABopenfile("testfile.txt", True)
+myfile = ABopenfile("testfile.txt", True)

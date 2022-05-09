@@ -34,6 +34,15 @@ myfile2.writeat("SSOSOOSOFJKEJRWOFIUWEORFJSE", 3)
 myfile.close()
 
 
-myfile = ABopenfile("testfile.txt", True)
-myfile.writeat("SdslkfjsdfE", 0)
+myfile=ABopenfile("testfile.txt",True)  #Create an AB file
+myfile.writeat("SabsdhjkadE",0)
 myfile.close()
+
+myfile=ABopenfile("testfile.txt",True)
+myfile.writeat("123455",0)
+myfile.close()
+
+myfile=ABopenfile("testfile.txt",True)
+s = []
+content = myfile.readat(None, 0)
+s = list(content)    

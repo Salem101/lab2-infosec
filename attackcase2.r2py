@@ -1,17 +1,14 @@
-#test 2
-
-myfile = ABopenfile("testfile.txt/0", True)
-
-myfile.writeat("Stest12345E")
-myfile.readat(None, 0)
-myfile.close()
-
-
+#test 1: accuracy
 
 if "testfile.txt.a" in listfiles():
  removefile("testfile.txt.a")
 if "testfile.txt.b" in listfiles(): 
  removefile("testfile.txt.b")
+ 
+#create file & enter data 
+myfile = ABopenfile("testfile.txt", True)
+myfile.writeat("Stest12345E", 0)
+#myfile.close()
 
 myfile = ABopenfile("testfile.txt", True)
 content = "S"
@@ -19,7 +16,7 @@ myfile.writeat(content, 0)
 offset = 1
 for i in range(1000):
  myfile.writeat('\0', offset)
- content += "ABC"
+ content += "X"
  offset += 1
  
  myfile.writeat('E', offset)
@@ -30,3 +27,8 @@ for i in range(1000):
  myfile.writeat("\r\n\t", 2)
  myfile.close()
 
+myfile = ABopenfile("testfile.txt/0", True)
+myfile.writeat("SABCDEFGHIJKLMNOPQRSTUVWXYZ!", 0)
+myfile2.writeat("SSOSOOSOFJKEJRWOFIUWEORFJSE", 3)
+
+myfile.close()

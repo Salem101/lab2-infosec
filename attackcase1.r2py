@@ -1,1 +1,14 @@
+#len(myfile) == x: 
+#if(writePosition <= x): 
+#  write()
+#else: 
+#  pass
 
+if "test.txt.a" in listfiles(): 
+  removefile("test.txt.a")
+if "test.txt.b" in listfiles():
+  removefile("test.txt.b")
+  
+myfile = ABopenfile("test.txt", True)
+
+myfile.writeat("SabcdefE", 0)

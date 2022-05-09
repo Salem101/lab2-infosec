@@ -15,6 +15,6 @@ myfile = ABopenfile("testfile.txt", True)
 try: 
  assert('Stest12345E' == myfile.readat(None, 0)
  myfile.close()
-except: 
+#except: 
  #log("Data not written to file. Test Failed")
- myfile.close()
+ #myfile.close()

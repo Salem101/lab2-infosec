@@ -6,7 +6,7 @@ if "testfile.txt.b" in listfiles():
   removefile("testfile.txt.b")
 
 myfile=ABopenfile("testfile.txt",True) 
-content = "S"
+content = ">= "
 myfile.writeat(content,0)
 offset=1
 for i in range(1000):

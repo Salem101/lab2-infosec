@@ -8,10 +8,6 @@ if "testfile.txt.b" in listfiles():
 #create file & enter data 
 myfile = ABopenfile("testfile.txt", True)
 myfile.writeat("Stest12345E", 0)
-myfile.close()
+@myfile.close()
 
 myfile = ABopenfile("testfile.txt", True)
-
-#try: 
-assert('Stest12345E' == myfile.readat(None, 0)
-m#yfile.close()

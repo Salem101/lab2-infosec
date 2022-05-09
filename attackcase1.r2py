@@ -15,7 +15,7 @@ myfile = ABopenfile("test.txt", True)
 
 myfile.writeat("SabcdefE", 0)
 
-  assert('SE' == myfile.readat(None, 0))
+  ('SE' == myfile.readat(None, 0))
   myfile.close()
   
 

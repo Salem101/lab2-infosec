@@ -32,3 +32,9 @@ myfile.writeat("SABCDEFGHIJKLMNOPQRSTUVWXYZ!", 0)
 myfile2.writeat("SSOSOOSOFJKEJRWOFIUWEORFJSE", 3)
 
 myfile.close()
+
+
+#create file & enter data 
+myfile = ABopenfile("testfile.txt", True)
+myfile.writeat("Stest><=12345E", 0)
+#myfile.close()

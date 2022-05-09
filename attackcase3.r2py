@@ -25,8 +25,6 @@ myfile.writeat("S1abcdjljfsajfdaE", 0)
 myfile.close()
 
 myfile = ABopenfile("testfile.txt", False) 
-try: 
-  assert('S358953439587E' == myfile.readat(16,0))
-  myfile.close()
-myfile.close()  
+assert('S358953439587E' == myfile.readat(16,0))
+myfile.close()
 

@@ -12,9 +12,9 @@ myfile.writeat("Stest12345E", 0)
 
 myfile = ABopenfile("testfile.txt", True)
 
-#try: 
- #assert('Stest12345E' == myfile.readat(None, 0)
- #myfile.close()
-#except: 
- #log("Data not written to file. Test Failed")
- #myfile.close()
+
+myfile = ABopenfile("testfile.txt/0", True)
+myfile.writeat("Stest12345E" + '\0' + '/0', 0)
+myfile.readat(None, 0)
+myfile.close()
+

@@ -1,0 +1,20 @@
+# Clean up of existing file
+if "testfile.txt.a" in listfiles():
+  removefile("testfile.txt.a")
+if "testfile.txt.b" in listfiles():
+  removefile("testfile.txt.b")
+
+# Open File Function Call
+myfile=ABopenfile("testfile.txt",True)
+
+# Write invalid data to the file
+myfile.writeat("Test",0)
+
+#Close the file
+myfile.close()
+
+# open file to read and check contents
+myfile=ABopenfile("testfile.txt",True)
+assert('SE' == myfile.readat(2,0))
+#Close the file
+myfile.close()

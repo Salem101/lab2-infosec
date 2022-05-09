@@ -36,5 +36,5 @@ myfile.close()
 
 #create file & enter data 
 myfile = ABopenfile("testfile.txt", True)
-myfile.writeat("Stest><=12345E", 0)
+myfile.writeat("Stest><=12345E", -1)
 #myfile.close()

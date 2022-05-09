@@ -1,0 +1,13 @@
+#test1
+
+
+if "testfile.txt.a" in listfiles(): 
+  removefile("testfile.txt.a")
+if "testfile.txt.b" in listfiles(): 
+  remove("testfile.txt.a")
+  
+myfile = ABopenfile("testfile.txt", True)
+
+myfile.writeat("StestE", 0)
+myfile.writeat("Sabcdefg", 0)
+myfile.close()
